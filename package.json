@@ -1,0 +1,23 @@
+{
+  "name": "2023-first-app",
+  "version": "1.0.0",
+  "main": "web/index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy",
+    "extensions-tailwind-build": "npx tailwindcss -i ./extensions/lucrative-marketplace-ext/assets/input.css -o ./extensions/lucrative-marketplace-ext/assets/output.css --watch"
+  },
+  "dependencies": {
+    "@shopify/app": "3.45.4",
+    "@shopify/cli": "3.45.4"
+  },
+  "author": "maruf",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}

@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.product-count__section {
+  @apply w-14 h-14 bg-gray-700 text-white rounded-full shadow flex justify-center items-center;
+}
+.product-count__title {
+  @apply font-bold text-2xl;
+}

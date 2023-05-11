@@ -1,0 +1,17 @@
+{{ 'output.css' | asset_url | stylesheet_tag }}
+
+  <div style="position: fixed; bottom: 0; right: 0;">
+  {% comment %} {{ "kitten.jpg" | asset_url | img_tag }} {% endcomment %}
+  {% comment %} A rounded di with text {% endcomment %}
+    <div class="product-count__section"> <p class="product-count__title" id="qbShopTotalProduct"></p>
+  </div>
+</div>
+
+<script src="{{ 'productCount.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+  {
+    "name": "App Embed",
+    "target": "body",
+    "settings": []
+  }
+{% endschema %}
